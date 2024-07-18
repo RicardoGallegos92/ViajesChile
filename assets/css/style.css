@@ -18,13 +18,18 @@ body{
     i{
         font-size: 40px;
     }
-     p{
+/*  ignora al 2º elemento
+    .row>div:not(:nth-child(2))>p{
+        background-color: green;
+    }
+*/
+    p{
         margin-bottom: 0;
         overflow-y:hidden;
-     }
+    }
 }
 
-.card-img-top{
+#Destacados .card-img-top{
     height: 150px;
     +.card-body{
         height: 200px;
