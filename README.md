@@ -54,8 +54,8 @@ JavaScript), haciendo uso de la grilla y de clases utilitarias.
 + [X] Aplicar correctamente dos o más componentes de Bootstrap JS (carousel, tooltips, entre otros).
 + [X] El código debe estar ordenado y documentado
 
-5. [ ]  Gestionar el código fuente utilizando Github.
+5. - [X]  Gestionar el código fuente utilizando Github.
 
 + [X] Inicializar GIT para versionar el proyecto localmente, realizando 5 o más commits.
 + [X] Implementar la creación de repositorio remoto en Github para el versionamiento del proyecto.
-+ [ ] Crear la página en Github Pages.
++ [X] Crear la página en Github Pages.
