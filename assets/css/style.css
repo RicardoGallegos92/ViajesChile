@@ -1,5 +1,5 @@
 :root{
-
+    --owo: ;
 }
 
 html{
@@ -14,7 +14,6 @@ body{
 }
 
 #Somos{
-    height: 500px;
     i{
         font-size: 40px;
     }
@@ -26,16 +25,23 @@ body{
     p{
         margin-bottom: 0;
         overflow-y:hidden;
+        height: min-content;
     }
 }
 
-#Destacados .card-img-top{
-    height: 150px;
-    +.card-body{
-        height: 200px;
-        >.card-text{
-            height: 120px;
-            overflow-y: hidden;
+#Destacados{
+    border: 2px red solid;
+    .card{
+        min-height: min-content;
+        max-height: min-content;
+        >.card-img-top{
+            height:200px;
+        }
+        >.card-body{
+            height:60%;
+            >.card-text{
+                overflow-y: hidden;
+            }
         }
     }
 }
@@ -44,5 +50,39 @@ footer *{
     font-size: 35px;
     div i{
         margin: 0 0px;
+    }
+}
+
+
+@media screen and (min-width: 767px) and (max-width: 769px){
+    .card-img-top{
+        height: 400px !important;
+    }
+}
+
+@media (max-width: 767px){
+    #Destacados{
+        .card-body{
+            height: auto;
+            >*{
+                font-size: 12px;
+                padding: 0;
+                margin: 0;
+            }
+            >.card-title{
+                text-align: center;
+            }
+            >.card-text{
+                display: none;
+                height: 120px;
+                overflow-y: hidden;
+            }
+        }
+    }
+
+    footer{
+        i{
+            font-size: 20px;
+        }
     }
 }
