@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viajes Chile</title>
+    <!-- Google Fonts 'Playfair Display' -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+    </style>
     <!-- Awesome Font -->
     <script src="https://kit.fontawesome.com/dd3e7e5350.js"
         crossorigin="anonymous"></script>
@@ -18,14 +22,15 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
+<body class="playfair">
     <!-- Nav Bar -->
     <header id="Header" class="text-white">
         <nav class="navbar navbar-expand-md fixed-top fondo-opacity">
             <div class="container-fluid mx-2 mx-md-5">
                 <a class="navbar-brand" href="#Header">
-                  <img src="./assets/img/viajes.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                  Viajes Chile
+                    <img src="./assets/img/viajes.svg" alt="Logo" width="30"
+                        height="24" class="d-inline-block align-text-top">
+                    Viajes Chile
                 </a>
                 <button class="navbar-toggler mx-4" type="button"
                     data-bs-toggle="collapse"
@@ -38,20 +43,17 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link"
-                                href="#Header">Inicio</a>
+                            <a class="nav-link" href="#Header">Inicio</a>
                         </li>
                         <li class="nav-item d-none d-md-block">
-                            <a class="nav-link"
-                                href="#Somos">Quienes Somos</a>
+                            <a class="nav-link" href="#Somos">Quienes Somos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"
                                 href="#Destacados">Destacados</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"
-                                href="#Formulario">Contacto</a>
+                            <a class="nav-link" href="#Formulario">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -267,18 +269,23 @@
             <div class="mb-3">
                 <label for="InputName" class="form-label">Nombre</label>
                 <input type="text" class="form-control" id="InputName"
-                    aria-describedby="InputName">
+                    aria-describedby="InputName" required>
             </div>
             <div class="mb-3">
                 <label for="asunto" class="form-label">Asunto</label>
-                <input type="text" class="form-control" id="asunto">
+                <input type="text" class="form-control" id="asunto" required>
             </div>
             <label class="mb-3" for="Textarea">Mensaje</label>
             <div class="form-floating">
-                <textarea class="form-control" id="Textarea"></textarea>
+                <textarea class="form-control" id="Textarea"
+                    required></textarea>
             </div>
-            <button type="submit"
-                class="btn btn-primary my-3 bg-info border-0">Enviar</button>
+            <button id="enviarCorreo" type="button"
+                class="btn btn-primary my-3 bg-info border-0"
+                data-bs-toggle="tooltip" data-bs-placement="right"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="$25USD + IVA">Enviar
+            </button>
         </form>
     </section>
     <!-- Footer -->
@@ -289,15 +296,35 @@
                 <h5 class="align-self-center">VIAJES CHILE</h5>
             </div>
             <div class="col-6 d-flex justify-content-center p-0 pe-5">
-                <a class="col-3 col-lg-1" target="_blank" href="https://github.com/RicardoGallegos92"><i class="align-self-center fa-brands fa-square-github"></i></a>
-                <a class="col-3 col-lg-1" target="_blank" href="https://www.linkedin.com/in/ricardo-gallegos-arenas/"><i class="align-self-center fa-brands fa-linkedin"></i></a>
-                <a class="col-3 col-lg-1" target="_blank" href="https://cssbattle.dev/player/ztDytQqhFWVwGWMJucWuDgZqyPC2"><i class="align-self-center fa-brands fa-square-twitter"></i></a>
-                <a class="col-3 col-lg-1" target="_blank" href="https://getbootstrap.com/"><i class="align-self-center fa-brands fa-square-facebook"></i></a>
+                <a data-bs-toggle="tooltip" data-bs-placement='top'
+                    data-bs-custom-class="custom-tooltip"
+                    data-bs-title="RicardoGallegos92"
+                    class="col-3 col-lg-1" target="_blank"
+                    href="https://github.com/RicardoGallegos92"><i
+                        class="align-self-center fa-brands fa-square-github"></i></a>
+                <a data-bs-toggle="tooltip" data-bs-placement='top'
+                    data-bs-custom-class="custom-tooltip"
+                    data-bs-title="Ricardo Gallegos"
+                    class="col-3 col-lg-1" target="_blank"
+                    href="https://www.linkedin.com/in/ricardo-gallegos-arenas/"><i
+                        class="align-self-center fa-brands fa-linkedin"></i></a>
+                <a data-bs-toggle="tooltip" data-bs-placement='top'
+                    data-bs-custom-class="custom-tooltip"
+                    data-bs-title="Kronos"
+                    class="col-3 col-lg-1" target="_blank"
+                    href="https://cssbattle.dev/player/ztDytQqhFWVwGWMJucWuDgZqyPC2"><i
+                        class="align-self-center fa-brands fa-square-twitter"></i></a>
+                <a data-bs-toggle="tooltip" data-bs-placement='top'
+                    data-bs-custom-class="custom-tooltip"
+                    data-bs-title="(>*,*)>~~~~"
+                    class="col-3 col-lg-1" target="_blank"
+                    href="https://getbootstrap.com/"><i
+                        class="align-self-center fa-brands fa-square-facebook"></i></a>
             </div>
         </div>
     </footer>
 </body>
-<!-- JQuery -->
+<!-- JQuery 3.7.1 -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
     crossorigin="anonymous"></script>

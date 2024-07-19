@@ -1,3 +1,10 @@
+.playfair {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+}
+
 :root{
     --TEXT: #FFFFFF;
     --FONDO: #000000;
@@ -23,17 +30,22 @@ html{
         background-color: rgba(255, 255, 255, 0.5);
     }
 
-    .navbar-toggler-icon{
-        
-        
-    }
-
     .navbar a{
         text-decoration: none;
     }
+
+    li{
+        border-radius: 10px;
+    }
+
+    .navbar-brand:hover,
+    li:hover{
+        background: radial-gradient(circle, rgba(68, 54, 164, 0.95) 50%, rgba(0, 0, 0, 0.95) 100%);
+    }
 }
 
-#Carrusel{
+#Carrusel *{
+    text-shadow: 2px -2px 2px var(--FONDO);
 }
 
 body{
@@ -89,6 +101,15 @@ footer *{
     h5{
         padding-top: 2px;
     }
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--FONDO);
+    --bs-tooltip-color: var(--TEXT);
+    --bs-tooltip-font-size: 16px;
+    --bs-tooltip-font-family: "Cabin", sans-serif;
+    --bs-tooltip-font-weight: 400;
+
 }
 
 
