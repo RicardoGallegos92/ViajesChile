@@ -22,8 +22,8 @@
     <!-- Nav Bar -->
     <header id="Header" class="text-white">
         <nav class="navbar navbar-expand-md fixed-top fondo-opacity">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+            <div class="container-fluid mx-2 mx-md-5">
+                <a class="navbar-brand" href="#Header">
                   <img src="./assets/img/viajes.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
                   Viajes Chile
                 </a>
@@ -38,17 +38,20 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#Header">Inicio</a>
+                            <a class="nav-link"
+                                href="#Header">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#Somos">Nosotros</a>
+                        <li class="nav-item d-none d-md-block">
+                            <a class="nav-link"
+                                href="#Somos">Quienes Somos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"
                                 href="#Destacados">Destacados</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#Formulario">Contacto</a>
+                            <a class="nav-link"
+                                href="#Formulario">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -280,20 +283,16 @@
     </section>
     <!-- Footer -->
     <footer
-        class="container-fluid bg-info px-0 py-5 text-center justify-content-center">
+        class="container-fluid bg-info py-5 text-center justify-content-center">
         <div class="row mx-0">
             <div class="col-6 p-0">
                 <h5 class="align-self-center">VIAJES CHILE</h5>
             </div>
-            <div class="col-6 d-flex justify-content-center p-0">
-                <i
-                    class="col-3 col-lg-1 align-self-center fa-brands fa-square-github"></i>
-                <i
-                    class="col-3 col-lg-1 align-self-center fa-brands fa-linkedin"></i>
-                <i
-                    class="col-3 col-lg-1 align-self-center fa-brands fa-square-twitter"></i>
-                <i
-                    class="col-3 col-lg-1 align-self-center fa-brands fa-square-facebook"></i>
+            <div class="col-6 d-flex justify-content-center p-0 pe-5">
+                <a class="col-3 col-lg-1" target="_blank" href="https://github.com/RicardoGallegos92"><i class="align-self-center fa-brands fa-square-github"></i></a>
+                <a class="col-3 col-lg-1" target="_blank" href="https://www.linkedin.com/in/ricardo-gallegos-arenas/"><i class="align-self-center fa-brands fa-linkedin"></i></a>
+                <a class="col-3 col-lg-1" target="_blank" href="https://cssbattle.dev/player/ztDytQqhFWVwGWMJucWuDgZqyPC2"><i class="align-self-center fa-brands fa-square-twitter"></i></a>
+                <a class="col-3 col-lg-1" target="_blank" href="https://getbootstrap.com/"><i class="align-self-center fa-brands fa-square-facebook"></i></a>
             </div>
         </div>
     </footer>

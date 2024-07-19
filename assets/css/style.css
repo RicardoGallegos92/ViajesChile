@@ -20,14 +20,12 @@ html{
 
     .navbar-toggler{
         border: 1px solid var(--TEXT);
-        background-color: RED;
-        color: rgb(255, 255, 255);
+        background-color: rgba(255, 255, 255, 0.5);
     }
 
     .navbar-toggler-icon{
-        background-image: url("../img/viajes.svg");
-        background-color: yellow;
-        text-shadow: 5px 5px white;
+        
+        
     }
 
     .navbar a{
@@ -60,16 +58,21 @@ body{
 }
 
 #Destacados{
-    .card{
-        >.card-img-top{
-            height:200px;
-        }
-        >.card-body{
+    .card-body{
+        height: auto;
+        >*{
+            padding: 0;
+            margin: 0;
             color: var(--TEXT);
-            >.card-text{
-                height:100px;
-                overflow-y: hidden;
-            }
+        }
+        >.card-title{
+            text-align: center;
+        }
+        >.card-text{
+            font-size: 12px;
+            display: none;
+            height: 120px;
+            overflow-y: hidden;
         }
     }
 }
@@ -81,9 +84,10 @@ body{
 }
 
 footer *{
-    font-size: 35px;
-    div i{
-        margin: 0 0px;
+    color: var(--TEXT);
+    font-size: 20px;
+    h5{
+        padding-top: 2px;
     }
 }
 
@@ -92,34 +96,40 @@ footer *{
     .card-img-top{
         height: 400px !important;
     }
+    #Somos p{
+        height: 30vw;
+    }
 }
 
 @media (max-width: 767px){
     .fondo-opacity{
         background-color: rgba(0, 0, 0, 0.75);
     }
+}
+
+@media (min-width: 770px){
     #Destacados{
-        .card-body{
-            height: auto;
-            >*{
-                font-size: 12px;
-                padding: 0;
-                margin: 0;
+        .card{
+            >.card-img-top{
+                height:200px;
             }
-            >.card-title{
-                text-align: center;
-            }
-            >.card-text{
-                display: none;
-                height: 120px;
-                overflow-y: hidden;
+            >.card-body{
+                >.card-title{
+                    text-align: start;
+                }
+                >.card-text{
+                    display: block;
+                    height:100px;
+                    overflow-y: hidden;
+                }
             }
         }
     }
 
-    footer{
+    footer *{
+        font-size: 35px;
         i{
-            font-size: 20px;
+            margin: 0 0px;
         }
     }
 }
