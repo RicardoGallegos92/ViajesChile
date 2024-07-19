@@ -5,141 +5,309 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viajes Chile</title>
-<!-- Awesome Font -->
+    <!-- Awesome Font -->
     <script src="https://kit.fontawesome.com/dd3e7e5350.js"
         crossorigin="anonymous"></script>
-        <!-- BootStrap 5.0.2 -->
+    <!-- BootStrap 5.3.3 -->
     <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
         crossorigin="anonymous">
-<!-- Estilo propio -->
+    <!-- Estilo propio -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body class="text-white">
-<!-- Nav Bar -->
-<!-- imagen gigante c/carrusel -->
-<!-- ¿Quienes somos? -->
+
+<body>
+    <!-- Nav Bar -->
+    <header id="Header" class="text-white">
+        <nav class="navbar navbar-expand-md fixed-top fondo-opacity">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                  <img src="./assets/img/viajes.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                  Viajes Chile
+                </a>
+                <button class="navbar-toggler mx-4" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Header">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Somos">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="#Destacados">Destacados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Formulario">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- imagen gigante c/carrusel -->
+    <section id="Carrusel" class="container-fluid px-0">
+        <div id="carouselCaptions" class="carousel slide"
+            data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselCaptions"
+                    data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselCaptions"
+                    data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselCaptions"
+                    data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/img/carousel1.jpg" class="d-block w-100"
+                        alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Las llamas que llaman</h5>
+                        <p>podemos apreciar como segregan a la albina</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/carousel2.jpg" class="d-block w-100"
+                        alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Unos Moais a contra luz</h5>
+                        <p>"Museo Británico" devuelvan el Moai</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/carousel3.jpg" class="d-block w-100"
+                        alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Un pinguino</h5>
+                        <p>Mirá lo que es eso que bello</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button"
+                data-bs-target="#carouselCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"
+                    aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button"
+                data-bs-target="#carouselCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon"
+                    aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- ¿Quienes somos? -->
     <section id="Somos" class="container d-none d-md-block">
         <H3 class="text-center border-bottom my-5 pb-4">¿QUIÉNES SOMOS?</H3>
         <div class="row justify-content-around text-center pb-4">
             <div class="col-4">
                 <i class="fa-solid fa-plane bg-info w-100 py-1"></i>
                 <p class="text-start py-2">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga iste est voluptas placeat exercitationem in quod optio obcaecati architecto quis ullam qui, rem blanditiis minus provident esse mollitia iure aperiam. Alias, aliquid harum labore quasi culpa autem laboriosam omnis praesentium corporis dolores voluptatem nulla facilis minus natus ipsa atque ex iure molestias! Modi aspernatur velit delectus, voluptas reiciendis id eum debitis eaque quasi nulla molestias sed? Rerum esse cupiditate voluptatum provident, laboriosam, debitis eos facilis quibusdam aliquid minima recusandae veniam facere molestiae et maiores placeat possimus mollitia alias dolorem reiciendis! Recusandae quo, similique officiis autem velit laborum id incidunt voluptates?
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Fuga iste est voluptas placeat exercitationem in quod optio
+                    obcaecati architecto quis ullam qui, rem blanditiis minus
+                    provident esse mollitia iure aperiam. Alias, aliquid harum
+                    labore quasi culpa autem laboriosam omnis praesentium
+                    corporis dolores voluptatem nulla facilis minus natus ipsa
+                    atque ex iure molestias! Modi aspernatur velit delectus,
+                    voluptas reiciendis id eum debitis eaque quasi nulla
+                    molestias sed? Rerum esse cupiditate voluptatum provident,
+                    laboriosam, debitis eos facilis quibusdam aliquid minima
+                    recusandae veniam facere molestiae et maiores placeat
+                    possimus mollitia alias dolorem reiciendis! Recusandae quo,
+                    similique officiis autem velit laborum id incidunt
+                    voluptates?
                 </p>
             </div>
             <div class="col-4">
                 <p class="text-start py-2">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga iste est voluptas placeat exercitationem in quod optio obcaecati architecto quis ullam qui, rem blanditiis minus provident esse mollitia iure aperiam. Alias, aliquid harum labore quasi culpa autem laboriosam omnis praesentium corporis dolores voluptatem nulla facilis minus natus ipsa atque ex iure molestias! Modi aspernatur velit delectus, voluptas reiciendis id eum debitis eaque quasi nulla molestias sed? Rerum esse cupiditate voluptatum provident, laboriosam, debitis eos facilis quibusdam aliquid minima recusandae veniam facere molestiae et maiores placeat possimus mollitia alias dolorem reiciendis! Recusandae quo, similique officiis autem velit laborum id incidunt voluptates?
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Fuga iste est voluptas placeat exercitationem in quod optio
+                    obcaecati architecto quis ullam qui, rem blanditiis minus
+                    provident esse mollitia iure aperiam. Alias, aliquid harum
+                    labore quasi culpa autem laboriosam omnis praesentium
+                    corporis dolores voluptatem nulla facilis minus natus ipsa
+                    atque ex iure molestias! Modi aspernatur velit delectus,
+                    voluptas reiciendis id eum debitis eaque quasi nulla
+                    molestias sed? Rerum esse cupiditate voluptatum provident,
+                    laboriosam, debitis eos facilis quibusdam aliquid minima
+                    recusandae veniam facere molestiae et maiores placeat
+                    possimus mollitia alias dolorem reiciendis! Recusandae quo,
+                    similique officiis autem velit laborum id incidunt
+                    voluptates?
                 </p>
                 <i class="fa-solid fa-mountain bg-info w-100 py-1"></i>
             </div>
             <div class="col-4">
                 <i class="fa-solid fa-route bg-info w-100 py-1"></i>
                 <p class="text-start py-2">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga iste est voluptas placeat exercitationem in quod optio obcaecati architecto quis ullam qui, rem blanditiis minus provident esse mollitia iure aperiam. Alias, aliquid harum labore quasi culpa autem laboriosam omnis praesentium corporis dolores voluptatem nulla facilis minus natus ipsa atque ex iure molestias! Modi aspernatur velit delectus, voluptas reiciendis id eum debitis eaque quasi nulla molestias sed? Rerum esse cupiditate voluptatum provident, laboriosam, debitis eos facilis quibusdam aliquid minima recusandae veniam facere molestiae et maiores placeat possimus mollitia alias dolorem reiciendis! Recusandae quo, similique officiis autem velit laborum id incidunt voluptates?
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Fuga iste est voluptas placeat exercitationem in quod optio
+                    obcaecati architecto quis ullam qui, rem blanditiis minus
+                    provident esse mollitia iure aperiam. Alias, aliquid harum
+                    labore quasi culpa autem laboriosam omnis praesentium
+                    corporis dolores voluptatem nulla facilis minus natus ipsa
+                    atque ex iure molestias! Modi aspernatur velit delectus,
+                    voluptas reiciendis id eum debitis eaque quasi nulla
+                    molestias sed? Rerum esse cupiditate voluptatum provident,
+                    laboriosam, debitis eos facilis quibusdam aliquid minima
+                    recusandae veniam facere molestiae et maiores placeat
+                    possimus mollitia alias dolorem reiciendis! Recusandae quo,
+                    similique officiis autem velit laborum id incidunt
+                    voluptates?
                 </p>
             </div>
         </div>
     </section>
-<!-- Destacados -->
+    <!-- Destacados -->
     <section id="Destacados" class="container my-2">
         <H3 class="text-center border-bottom my-4 pb-4">DESTACADOS</H3>
         <div class="row justify-content-around">
             <!-- 1a foto -->
-             <div class="col-10 my-3 col-lg-3">
+            <div class="col-10 my-3 col-lg-3">
                 <div class="card bg-info">
-                    <img src="./assets/img/card1.jpg" class="card-img-top border " alt="...">
+                    <img src="./assets/img/card1.jpg"
+                        class="card-img-top border " alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
                         <p class="card-text">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum commodi incidunt reprehenderit dolore corporis omnis similique officiis, odit temporibus consequatur totam dolorem perferendis inventore aspernatur atque molestias dignissimos vero laboriosam deserunt aliquam, earum nam nisi veniam! Fuga molestias veniam, commodi esse blanditiis asperiores ab dolore eos, dolores ad ratione ullam!                        
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Rerum commodi incidunt reprehenderit dolore
+                            corporis omnis similique officiis, odit temporibus
+                            consequatur totam dolorem perferendis inventore
+                            aspernatur atque molestias dignissimos vero
+                            laboriosam deserunt aliquam, earum nam nisi veniam!
+                            Fuga molestias veniam, commodi esse blanditiis
+                            asperiores ab dolore eos, dolores ad ratione ullam!
                         </p>
                     </div>
                 </div>
             </div>
             <!-- 2a foto -->
             <div class="col-10 my-3 col-lg-3">
-               <div class="card bg-info">
-                   <img src="./assets/img/card2.jpg" class="card-img-top border " alt="...">
-                   <div class="card-body">
-                       <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                       <p class="card-text">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum commodi incidunt reprehenderit dolore corporis omnis similique officiis, odit temporibus consequatur totam dolorem perferendis inventore aspernatur atque molestias dignissimos vero laboriosam deserunt aliquam, earum nam nisi veniam! Fuga molestias veniam, commodi esse blanditiis asperiores ab dolore eos, dolores ad ratione ullam!                        
-                       </p>
-                   </div>
-               </div>
-           </div>
-           <!-- 3a foto -->
-           <div class="col-10 my-3 col-lg-3">
-              <div class="card bg-info">
-                  <img src="./assets/img/card3.jpg" class="card-img-top border " alt="...">
-                  <div class="card-body">
-                      <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                      <p class="card-text">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum commodi incidunt reprehenderit dolore corporis omnis similique officiis, odit temporibus consequatur totam dolorem perferendis inventore aspernatur atque molestias dignissimos vero laboriosam deserunt aliquam, earum nam nisi veniam! Fuga molestias veniam, commodi esse blanditiis asperiores ab dolore eos, dolores ad ratione ullam!                        
-                      </p>
-                  </div>
-              </div>
-          </div>
-          <!-- 4a foto -->
-          <div class="col-10 my-3 col-lg-3">
-             <div class="card bg-info">
-                 <img src="./assets/img/card4.jpg" class="card-img-top border " alt="...">
-                 <div class="card-body">
-                     <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                     <p class="card-text">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum commodi incidunt reprehenderit dolore corporis omnis similique officiis, odit temporibus consequatur totam dolorem perferendis inventore aspernatur atque molestias dignissimos vero laboriosam deserunt aliquam, earum nam nisi veniam! Fuga molestias veniam, commodi esse blanditiis asperiores ab dolore eos, dolores ad ratione ullam!                        
-                     </p>
-                 </div>
-             </div>
-         </div>
+                <div class="card bg-info">
+                    <img src="./assets/img/card2.jpg"
+                        class="card-img-top border " alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Rerum commodi incidunt reprehenderit dolore
+                            corporis omnis similique officiis, odit temporibus
+                            consequatur totam dolorem perferendis inventore
+                            aspernatur atque molestias dignissimos vero
+                            laboriosam deserunt aliquam, earum nam nisi veniam!
+                            Fuga molestias veniam, commodi esse blanditiis
+                            asperiores ab dolore eos, dolores ad ratione ullam!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- 3a foto -->
+            <div class="col-10 my-3 col-lg-3">
+                <div class="card bg-info">
+                    <img src="./assets/img/card3.jpg"
+                        class="card-img-top border " alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Rerum commodi incidunt reprehenderit dolore
+                            corporis omnis similique officiis, odit temporibus
+                            consequatur totam dolorem perferendis inventore
+                            aspernatur atque molestias dignissimos vero
+                            laboriosam deserunt aliquam, earum nam nisi veniam!
+                            Fuga molestias veniam, commodi esse blanditiis
+                            asperiores ab dolore eos, dolores ad ratione ullam!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- 4a foto -->
+            <div class="col-10 my-3 col-lg-3">
+                <div class="card bg-info">
+                    <img src="./assets/img/card4.jpg"
+                        class="card-img-top border " alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Rerum commodi incidunt reprehenderit dolore
+                            corporis omnis similique officiis, odit temporibus
+                            consequatur totam dolorem perferendis inventore
+                            aspernatur atque molestias dignissimos vero
+                            laboriosam deserunt aliquam, earum nam nisi veniam!
+                            Fuga molestias veniam, commodi esse blanditiis
+                            asperiores ab dolore eos, dolores ad ratione ullam!
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-<!-- Contacto / formulario -->
-    <section class="container">
+    <!-- Contacto / formulario -->
+    <section id="Formulario" class="container">
         <H3 class="text-center border-bottom my-5 pb-4">CONTACTO</H3>
         <form class="my-5">
             <div class="mb-3">
-            <label for="InputName" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="InputName" aria-describedby="InputName">
+                <label for="InputName" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="InputName"
+                    aria-describedby="InputName">
             </div>
             <div class="mb-3">
-            <label for="asunto" class="form-label">Asunto</label>
-            <input type="text" class="form-control" id="asunto">
+                <label for="asunto" class="form-label">Asunto</label>
+                <input type="text" class="form-control" id="asunto">
             </div>
-            <label for="Textarea">Mensaje</label>
+            <label class="mb-3" for="Textarea">Mensaje</label>
             <div class="form-floating">
                 <textarea class="form-control" id="Textarea"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary my-3 bg-info border-0">Enviar</button>
+            <button type="submit"
+                class="btn btn-primary my-3 bg-info border-0">Enviar</button>
         </form>
     </section>
-<!-- Footer -->
-    <footer class="container-fluid bg-info px-0 py-5 text-center justify-content-center">
-    <div class="row mx-0">
-        <div class="col-6 p-0">
-            <h5 class="align-self-center">VIAJES CHILE</h5>
+    <!-- Footer -->
+    <footer
+        class="container-fluid bg-info px-0 py-5 text-center justify-content-center">
+        <div class="row mx-0">
+            <div class="col-6 p-0">
+                <h5 class="align-self-center">VIAJES CHILE</h5>
+            </div>
+            <div class="col-6 d-flex justify-content-center p-0">
+                <i
+                    class="col-3 col-lg-1 align-self-center fa-brands fa-square-github"></i>
+                <i
+                    class="col-3 col-lg-1 align-self-center fa-brands fa-linkedin"></i>
+                <i
+                    class="col-3 col-lg-1 align-self-center fa-brands fa-square-twitter"></i>
+                <i
+                    class="col-3 col-lg-1 align-self-center fa-brands fa-square-facebook"></i>
+            </div>
         </div>
-        <div class="col-6 d-flex justify-content-center p-0">
-            <i class="col-3 col-lg-1 align-self-center fa-brands fa-square-github"></i>
-            <i class="col-3 col-lg-1 align-self-center fa-brands fa-linkedin"></i>
-            <i class="col-3 col-lg-1 align-self-center fa-brands fa-square-twitter"></i>
-            <i class="col-3 col-lg-1 align-self-center fa-brands fa-square-facebook"></i>
-        </div>
-    </div>
     </footer>
 </body>
+<!-- JQuery -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
     crossorigin="anonymous"></script>
-<!-- BootStrap 5.0.2 -->
+<!-- BootStrap 5.3.3 -->
 <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 <!-- js propio -->
 <script src="./assets/js/main.js"></script>
+
 </html>

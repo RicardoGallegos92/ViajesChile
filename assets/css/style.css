@@ -1,5 +1,6 @@
 :root{
-    --owo: ;
+    --TEXT: #FFFFFF;
+    --FONDO: #000000;
 }
 
 html{
@@ -9,8 +10,37 @@ html{
     box-sizing: border-box;
 }
 
+#Header{
+    *{
+        color: var(--TEXT);
+    }
+    .navbar-brand{
+        height: 2rem;
+    }
+
+    .navbar-toggler{
+        border: 1px solid var(--TEXT);
+        background-color: RED;
+        color: rgb(255, 255, 255);
+    }
+
+    .navbar-toggler-icon{
+        background-image: url("../img/viajes.svg");
+        background-color: yellow;
+        text-shadow: 5px 5px white;
+    }
+
+    .navbar a{
+        text-decoration: none;
+    }
+}
+
+#Carrusel{
+}
+
 body{
-    background-color: black;
+    color: var(--TEXT);
+    background-color: var(--FONDO);
 }
 
 #Somos{
@@ -30,19 +60,23 @@ body{
 }
 
 #Destacados{
-    border: 2px red solid;
     .card{
-        min-height: min-content;
-        max-height: min-content;
         >.card-img-top{
             height:200px;
         }
         >.card-body{
-            height:60%;
+            color: var(--TEXT);
             >.card-text{
+                height:100px;
                 overflow-y: hidden;
             }
         }
+    }
+}
+
+#Formulario{
+    #Textarea{
+        height: 10rem;
     }
 }
 
@@ -61,6 +95,9 @@ footer *{
 }
 
 @media (max-width: 767px){
+    .fondo-opacity{
+        background-color: rgba(0, 0, 0, 0.75);
+    }
     #Destacados{
         .card-body{
             height: auto;
